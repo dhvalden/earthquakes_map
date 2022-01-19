@@ -29,7 +29,7 @@ path = d3.geoPath().projection(projection);
 
 // Load external data and boot
 d3.queue()
-    .defer(d3.json, "http://enjalot.github.io/wwsd/data/world/world-110m.geojson")
+    .defer(d3.json, "https://enjalot.github.io/wwsd/data/world/world-110m.geojson")
     .defer(d3.csv, "earthquakes.csv")
     .await(ready);
 
